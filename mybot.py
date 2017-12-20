@@ -9,7 +9,7 @@ from googletrans import Translator
 
 cl = LINETCR.LINE()
 # cl.login(qr=True)
-cl.login(token='EnT1zehU6MkRLcAUC45f.JaIcRyc14sLXZI5dJNLfhW.Xv+dz7kJSnBg4sujr0TeGc397pDmnCpBCjXwQRO5ZhI=')
+cl.login(token='token_here')
 cl.loginResult()
 print "===[Login Success]==="
 
@@ -65,8 +65,8 @@ helpMessage ="""
 """
 
 mid = cl.getProfile().mid
-Creator="u8c0882ad80b5e12971ce2e438e79451f"
-admin=["u8c0882ad80b5e12971ce2e438e79451f"]
+Creator="Creator_here_mid"
+admin=["Admin_here_mid"]
 
 contact = cl.getProfile()
 profile = cl.getProfile()
@@ -832,7 +832,7 @@ def bot(op):
 						time.sleep(0.001)
 						cl.sendText(msg.to,"Progress█████░░░ 65%")
 						time.sleep(0.001)
-						cl.sendText(msg.to,"Progress██████████ 100%")
+						cl.sendText(msg.to,"Progress███████ 100%")
 						time.sleep(0.001)
 						G = cl.getGroup(msg.to)
 						G.preventJoinByTicket = True
